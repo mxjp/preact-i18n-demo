@@ -1,0 +1,18 @@
+{
+	"private": true,
+	"scripts": {
+		"compile": "preact-i18n compile && webpack --env.prod",
+		"start": "concurrently \"preact-i18n start\" \"webpack-dev-server\""
+	},
+	"devDependencies": {
+		"@mpt/preact-i18n": "^0.4.1",
+		"concurrently": "^5.2.0",
+		"html-webpack-plugin": "^4.3.0",
+		"preact": "^10.4.5",
+		"ts-loader": "^8.0.0",
+		"typescript": "^3.9.6",
+		"webpack": "^4.43.0",
+		"webpack-cli": "^3.3.12",
+		"webpack-dev-server": "^3.11.0"
+	}
+}

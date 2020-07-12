@@ -1,0 +1,30 @@
+{
+	"values": {
+		"0": {
+			"value": "Hello World!",
+			"lastModified": "2020-07-12T20:19:18.004Z",
+			"translations": {
+				"de": {
+					"lastModified": "2020-07-12T20:19:20.965Z",
+					"value": "Hallo Welt!"
+				}
+			}
+		},
+		"1": {
+			"value": [
+				"{count} second",
+				"{count} seconds"
+			],
+			"lastModified": "2020-07-12T20:16:51.548Z",
+			"translations": {
+				"de": {
+					"lastModified": "2020-07-12T20:17:25.601Z",
+					"value": [
+						"{count} Sekunde",
+						"{count} Sekunden"
+					]
+				}
+			}
+		}
+	}
+}
