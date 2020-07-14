@@ -1,19 +1,12 @@
 import { h, render } from "preact";
-import { I18n, FetchClient, Language, plural_en, plural_de } from "@mpt/preact-i18n";
+import { I18n, FetchClient, Language, languageFactory } from "@mpt/preact-i18n";
 import { App } from "./app";
 
-const plurals: { [name: string]: Language.PluralProcessor } = {
-	de: plural_de,
-	en: plural_en
-};
-
 const i18n = new I18n({
+	languageFactory,
 	clients: [
 		new FetchClient()
-	],
-	languageFactory: (name, resources?: Language.Resources) => {
-		return new Language({ name, resources, pluralProcessor: plurals[name] });
-	}
+	]
 });
 
 Promise.all([

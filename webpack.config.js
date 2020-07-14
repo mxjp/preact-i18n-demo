@@ -20,6 +20,9 @@ module.exports = ({ prod } = {}) => ({
 			minify: { collapseWhitespace: !!prod }
 		})
 	],
+	optimization: {
+		usedExports: true
+	},
 	devServer: {
 		before: app => app.use("/lang", static(`${__dirname}/dist/lang`))
 	},

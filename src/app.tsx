@@ -33,7 +33,7 @@ export class App extends Component<{}, AppState> {
 				<T id="0" value="Hello World!" />
 			</h1>
 
-			<TX id="1" value={["{count} second", "{count} seconds"]} count={state.seconds} fields={{ count: String(state.seconds) }} />
+			<TX id="1" value={["{count} second", "{count} seconds"]} count={state.seconds} />
 		</div>
 	}
 }
