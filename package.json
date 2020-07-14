@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"scripts": {
-		"compile": "preact-i18n compile && webpack --env.prod",
+		"compile": "preact-i18n compile --strict && webpack --env.prod",
 		"start": "concurrently \"preact-i18n start\" \"webpack-dev-server\""
 	},
 	"devDependencies": {
