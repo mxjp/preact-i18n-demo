@@ -25,6 +25,16 @@
 					]
 				}
 			}
+		},
+		"2": {
+			"value": "Today is the {today,date}.",
+			"lastModified": "2020-07-19T19:18:47.810Z",
+			"translations": {
+				"de": {
+					"lastModified": "2020-07-19T19:18:52.371Z",
+					"value": "Heute  ist der {today,date}."
+				}
+			}
 		}
 	}
 }

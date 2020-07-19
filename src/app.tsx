@@ -32,8 +32,12 @@ export class App extends Component<{}, AppState> {
 			<h1>
 				<T id="0" value="Hello World!" />
 			</h1>
-
-			<TX id="1" value={["{count} second", "{count} seconds"]} count={state.seconds} />
+			<p>
+				<TX id="1" value={["{count} second", "{count} seconds"]} count={state.seconds} />
+			</p>
+			<p>
+				<TX id="2" value="Today is the {today,date}." fields={{ today: new Date() }} />
+			</p>
 		</div>
 	}
 }
