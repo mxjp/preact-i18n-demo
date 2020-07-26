@@ -1,13 +1,7 @@
 import { h, render } from "preact";
-import { I18n, FetchClient, Language, languageFactory } from "@mpt/preact-i18n";
+import { Language } from "@mpt/preact-i18n";
 import { App } from "./app";
-
-const i18n = new I18n({
-	languageFactory,
-	clients: [
-		new FetchClient()
-	]
-});
+import { i18n } from "./i18n";
 
 Promise.all([
 	new Promise(r => window.addEventListener("load", r)),

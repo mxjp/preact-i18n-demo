@@ -5,7 +5,7 @@
 		"start": "concurrently \"preact-i18n start\" \"webpack-dev-server\""
 	},
 	"devDependencies": {
-		"@mpt/preact-i18n": "^0.6.0",
+		"@mpt/preact-i18n": "^0.6.1",
 		"concurrently": "^5.2.0",
 		"html-webpack-plugin": "^4.3.0",
 		"preact": "^10.4.5",
